@@ -1,0 +1,23 @@
+.announcement-create {
+    display: flex;
+}
+.announcement-create>* {
+    flex: 1;
+}
+.form-container form *{
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    resize: none;
+}
+.preview-container {
+    border: 1px solid black;
+    margin: 0 8px;
+    position: relative;
+}
+.preview-container>img{
+    filter: blur(2px);
+}
+.preview-container .sample-cell{
+    position: absolute;
+}
