@@ -1,0 +1,15 @@
+name: Site Ping Workflow
+
+on:
+  schedule:
+    # Runs every 5 minutes
+    - cron: '*/5 0-15 * * *'
+
+jobs:
+  pingSite:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Ping example.com
+      run: |
+        curl https://bds-songlong.glitch.me/
